@@ -12,6 +12,12 @@ The `widget` determines the UI widget that the content editor will use when edit
 
 Entries are loaded and persisted through a `backend` that will typically represent a `git` repository. 
 
+## Collection entries
+
+There are two types of collection entries, namely a `folder` and a `file` type. A `folder` entry describes the settings for a group of files in a specific folder, whereas a `file` entry defines the configuration for a specific file or set of files. 
+
+The main difference between these types is that each `file` entry has its own fields specified individually, while the separate files within a `folder` all use the same field specification.
+
 ## State shape / reducers
 **Auth:** Keeps track of the logged state and the current user.
 
